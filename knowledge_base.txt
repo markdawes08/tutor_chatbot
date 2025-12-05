@@ -1,0 +1,70 @@
+MACHINE LEARNING
+Machine learning is about finding patterns in data that generalize to unseen samples.
+A model is a function that maps inputs to outputs based on data.
+Supervised learning uses labeled data.
+Unsupervised learning uses unlabeled data.
+Overfitting occurs when a model memorizes noise instead of patterns.
+Regularization reduces model complexity to prevent overfitting.
+L1 regularization encourages sparsity in weights.
+L2 regularization shrinks weights but does not force them to zero.
+Bias is systematic error.
+Variance is sensitivity to data fluctuations.
+The bias-variance tradeoff controls model complexity.
+Cross-validation estimates generalization error.
+Gradient descent optimizes a model by following the negative gradient.
+Learning rate controls the step size of gradient updates.
+Feature scaling helps gradient-based methods converge faster.
+PROBABILITY
+A probability distribution assigns likelihoods to outcomes in a sample space.
+The law of total probability decomposes a probability over mutually exclusive events.
+Bayes’ rule updates beliefs based on new evidence.
+A random variable maps outcomes to numeric values.
+Expectation is the average value of a random variable under the distribution.
+Variance measures spread around the mean.
+Covariance measures how two variables vary together.
+Independence means the joint distribution factorizes into marginals.
+Conditional independence removes dependence when conditioning on another variable.
+The central limit theorem states that sums of many variables tend toward a normal distribution.
+A Bernoulli distribution models binary outcomes.
+A Binomial distribution counts successes across repeated Bernoulli trials.
+A Poisson distribution models counts of rare events over time.
+STATISTICS
+A parameter describes a population, while a statistic describes a sample.
+Hypothesis testing assesses evidence against a null hypothesis.
+A p-value measures how extreme data is under the null.
+Confidence intervals estimate a parameter with uncertainty.
+Maximum likelihood estimation finds parameters that maximize the probability of data.
+Linear regression models a linear relationship between inputs and a continuous output.
+Logistic regression models the log-odds of binary outcomes.
+Correlation measures linear association between two variables.
+A t-test compares means across samples.
+ANOVA compares means across multiple groups.
+A residual is the difference between observed and predicted values.
+Multicollinearity harms interpretability in linear models.
+DEEP LEARNING
+A neural network is a function composed of layers of linear transformations and nonlinearities.
+Activation functions introduce nonlinearity.
+ReLU avoids saturation in the positive region.
+Sigmoid squashes inputs to the interval (0, 1).
+Tanh squashes inputs to (-1, 1).
+Backpropagation computes gradients via the chain rule.
+A convolution extracts local spatial features.
+Pooling reduces spatial resolution.
+Batch normalization stabilizes training by normalizing activations.
+Dropout randomly zeros activations to prevent overfitting.
+Neural networks require large datasets to generalize well.
+Stochastic gradient descent approximates the gradient using mini-batches.
+Weight initialization affects training stability.
+GENERATIVE AI
+A generative model learns the distribution of data to sample new examples.
+Variational autoencoders learn a latent space by optimizing an evidence lower bound.
+GANs train a generator and discriminator in a minimax game.
+Diffusion models learn to reverse a noise-adding process.
+Transformers use attention to model long-range dependencies.
+Self-attention computes similarity between tokens to form context vectors.
+Decoder-only transformers generate text autoregressively.
+Encoder-decoder transformers excel at sequence-to-sequence tasks.
+Embeddings map text into dense vector representations.
+Cosine similarity measures angular closeness between vectors.
+Retrieval-augmented generation adds external knowledge to a language model.
+A vector index stores embeddings for fast similarity search.
