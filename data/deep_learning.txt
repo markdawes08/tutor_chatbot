@@ -1,0 +1,38 @@
+DEEP LEARNING
+A neural network is a function composed of layers of linear transformations and nonlinearities.
+Activation functions introduce nonlinearity.
+ReLU avoids saturation in the positive region.
+Sigmoid squashes inputs to the interval (0, 1).
+Tanh squashes inputs to (-1, 1).
+Backpropagation computes gradients via the chain rule.
+A convolution extracts local spatial features.
+Pooling reduces spatial resolution.
+Batch normalization stabilizes training by normalizing activations.
+Dropout randomly zeros activations to prevent overfitting.
+Neural networks require large datasets to generalize well.
+Stochastic gradient descent approximates the gradient using mini-batches.
+Weight initialization affects training stability.
+
+NEURAL NETWORK ARCHITECTURES
+-   **Convolutional Neural Networks (CNNs):** CNNs are a class of deep neural networks, most commonly applied to analyzing visual imagery. They are inspired by the organization of the animal visual cortex. The key components of a CNN are convolutional layers, pooling layers, and fully connected layers.
+-   **Recurrent Neural Networks (RNNs):** RNNs are a class of neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units) are special kinds of RNNs that are designed to handle the vanishing gradient problem.
+-   **Transformers:** Originally proposed for machine translation, transformers have become the go-to architecture for a wide range of NLP tasks. They are based on the concept of attention, which allows the model to weigh the importance of different parts of the input sequence.
+
+OPTIMIZATION ALGORITHMS
+While Stochastic Gradient Descent (SGD) is a fundamental optimization algorithm, several more advanced optimizers are commonly used in deep learning:
+-   **Adam (Adaptive Moment Estimation):** Adam is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iteratively based on training data. It combines the advantages of two other extensions of SGD: AdaGrad and RMSProp.
+-   **RMSprop (Root Mean Square Propagation):** RMSprop is an unpublished, adaptive learning rate method. The key idea is to divide the learning rate for a weight by a running average of the magnitudes of recent gradients for that weight.
+-   **AdaGrad (Adaptive Gradient Algorithm):_** AdaGrad is an algorithm for gradient-based optimization that adapts the learning rate to the parameters, performing smaller updates for parameters associated with frequently occurring features, and larger updates for parameters associated with infrequently occurring features.
+
+TRANSFER LEARNING
+Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task. It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks. This can be very effective as the pre-trained models have often been trained on massive datasets, and the features they have learned can be beneficial for the new task.
+-   **Fine-tuning:** In fine-tuning, you unfreeze a few of the top layers of a frozen model base and jointly train both the newly-added classifier layers and the last layers of the base model. This allows us to "fine-tune" the higher-order feature representations in the base model to make them more relevant for the new task.
+
+AUTOENCODERS
+An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner. The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore signal “noise”.
+-   **Variational Autoencoders (VAEs):** VAEs are a type of autoencoder that, instead of learning a single encoding for each input, learn a probability distribution for the encoding. This allows them to generate new data that is similar to the training data.
+
+REGULARIZATION TECHNIQUES
+In addition to Dropout, other regularization techniques are used to prevent overfitting in deep neural networks:
+-   **Early Stopping:** This is a form of regularization where you stop training when a monitored metric has stopped improving.
+-   **Data Augmentation:** This involves creating new training data from the existing training data by applying transformations such as rotating, flipping, or scaling images.

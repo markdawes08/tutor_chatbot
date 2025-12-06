@@ -1,0 +1,41 @@
+PROBABILITY
+A probability distribution assigns likelihoods to outcomes in a sample space.
+The law of total probability decomposes a probability over mutually exclusive events.
+Bayes’ rule updates beliefs based on new evidence.
+A random variable maps outcomes to numeric values.
+Expectation is the average value of a random variable under the distribution.
+Variance measures spread around the mean.
+Covariance measures how two variables vary together.
+Independence means the joint distribution factorizes into marginals.
+Conditional independence removes dependence when conditioning on another variable.
+The central limit theorem states that sums of many variables tend toward a normal distribution.
+A Bernoulli distribution models binary outcomes.
+A Binomial distribution counts successes across repeated Bernoulli trials.
+A Poisson distribution models counts of rare events over time.
+
+PROBABILITY AXIOMS
+The foundations of probability theory are built on three axioms, often called Kolmogorov's axioms:
+1.  The probability of an event is a non-negative real number.
+2.  The probability of the entire sample space is 1.
+3.  If A and B are mutually exclusive events, then the probability of A or B is the sum of their individual probabilities.
+
+CONDITIONAL PROBABILITY
+Conditional probability is the probability of an event occurring, given that another event has already occurred. It is defined as P(A|B) = P(A and B) / P(B), where P(B) > 0. This concept is fundamental to many areas of machine learning and statistics, as it allows us to update our beliefs in the face of new evidence. The chain rule of probability, which allows us to calculate the joint probability of a sequence of events, is derived from the definition of conditional probability.
+
+COMMON PROBABILITY DISTRIBUTIONS
+In addition to the Bernoulli, Binomial, and Poisson distributions, several other distributions are commonly used in machine learning and statistics:
+-   **Normal (Gaussian) Distribution:** This is a continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. The bell-shaped curve of the normal distribution is iconic in statistics.
+-   **Uniform Distribution:** This is a type of probability distribution in which all outcomes are equally likely. A classic example is the rolling of a fair die.
+-   **Exponential Distribution:** This is a continuous probability distribution that describes the time between events in a Poisson point process, i.e., a process in which events occur continuously and independently at a constant average rate.
+-   **Beta Distribution:** This is a family of continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β. It is often used to model the uncertainty about the probability of success of an experiment.
+
+MARKOV CHAINS
+A Markov chain is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. This "memoryless" property is called the Markov property. Markov chains are used in a wide variety of applications, from modeling the weather to analyzing the structure of language.
+-   **States and Transitions:** A Markov chain is defined by a set of states and the probabilities of transitioning from one state to another. These transition probabilities can be represented in a transition matrix.
+-   **Steady-State Distribution:** For many Markov chains, as the number of steps increases, the probability distribution over the states converges to a unique distribution, called the steady-state or stationary distribution.
+
+INFORMATION THEORY
+Information theory is a branch of applied mathematics and electrical engineering involving the quantification of information.
+-   **Entropy:** In information theory, entropy is a measure of the uncertainty in a random variable. It quantifies the expected value of the information contained in a message.
+-   **Kullback-Leibler (KL) Divergence:** KL divergence is a measure of how one probability distribution is different from a second, reference probability distribution. It is often used in machine learning to measure the difference between the true distribution of data and the model's approximation of it.
+-   **Mutual Information:** Mutual information of two random variables is a measure of the mutual dependence between the two variables. It quantifies the "amount of information" obtained about one random variable through observing the other random variable.

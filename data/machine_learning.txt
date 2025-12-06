@@ -1,0 +1,47 @@
+MACHINE LEARNING
+Machine learning is about finding patterns in data that generalize to unseen samples.
+A model is a function that maps inputs to outputs based on data.
+Supervised learning uses labeled data.
+Unsupervised learning uses unlabeled data.
+Overfitting occurs when a model memorizes noise instead of patterns.
+Regularization reduces model complexity to prevent overfitting.
+L1 regularization encourages sparsity in weights.
+L2 regularization shrinks weights but does not force them to zero.
+Bias is systematic error.
+Variance is sensitivity to data fluctuations.
+The bias-variance tradeoff controls model complexity.
+Cross-validation estimates generalization error.
+Gradient descent optimizes a model by following the negative gradient.
+Learning rate controls the step size of gradient updates.
+Feature scaling helps gradient-based methods converge faster.
+
+ADVANCED SUPERVISED LEARNING
+Support Vector Machines (SVMs) are powerful supervised learning models for classification and regression. They work by finding the hyperplane that best separates data points of different classes in a high-dimensional space. The "kernel trick" allows SVMs to model non-linear relationships by mapping the data into a higher-dimensional space where a linear separator can be found.
+
+Decision Trees are another popular supervised learning model. They create a tree-like structure of decisions and their possible consequences. Each internal node represents a "test" on an attribute (e.g., whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). One of the main advantages of decision trees is their interpretability.
+
+Ensemble methods combine multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.
+- Bagging (Bootstrap Aggregating) is an ensemble method that involves training the same algorithm multiple times on different subsets of the training data, which are drawn with replacement. The final prediction is the average of all the predictions from each model. Random Forests are a popular example of a bagging method.
+- Boosting is an ensemble method that works by training a sequence of weak learners, where each subsequent learner is trained to correct the errors of its predecessor. Gradient Boosting and AdaBoost are well-known boosting algorithms.
+
+UNSUPERVISED LEARNING IN DEPTH
+Clustering is a common unsupervised learning task. It involves grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.
+- K-Means Clustering is a popular and simple clustering algorithm. It partitions the data into 'k' clusters by iteratively assigning each data point to the cluster with the nearest mean (cluster centroid).
+- Hierarchical Clustering creates a tree of clusters. There are two main approaches: agglomerative (bottom-up), where each data point starts in its own cluster and clusters are merged, and divisive (top-down), where all data points start in one cluster which is then recursively split.
+
+Dimensionality Reduction is the process of reducing the number of random variables under consideration by obtaining a set of principal variables.
+- Principal Component Analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.
+- t-Distributed Stochastic Neighbor Embedding (t-SNE) is a technique for dimensionality reduction that is particularly well suited for the visualization of high-dimensional datasets.
+
+EVALUATION METRICS
+For classification tasks, common metrics include:
+- Accuracy: the proportion of correct predictions among the total number of cases processed.
+- Precision: the proportion of true positives among all instances classified as positive.
+- Recall (Sensitivity): the proportion of true positives that are correctly identified.
+- F1-Score: the harmonic mean of precision and recall.
+- ROC Curve and AUC: The Receiver Operating Characteristic (ROC) curve plots the true positive rate against the false positive rate. The Area Under the Curve (AUC) provides a single number summary of the ROC curve's performance.
+
+For regression tasks, common metrics include:
+- Mean Absolute Error (MAE): the average of the absolute differences between the predicted and actual values.
+- Mean Squared Error (MSE): the average of the squared differences between the predicted and actual values.
+- R-squared (R²): the proportion of the variance in the dependent variable that is predictable from the independent variable(s).
