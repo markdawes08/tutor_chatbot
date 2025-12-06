@@ -1,0 +1,53 @@
+Q: What is machine learning?
+A: Machine learning is about finding patterns in data that generalize to unseen samples.
+
+Q: What is the difference between supervised and unsupervised learning?
+A: Supervised learning uses labeled data, while unsupervised learning uses unlabeled data.
+
+Q: What is overfitting?
+A: Overfitting occurs when a model memorizes noise in the training data instead of learning the underlying patterns, leading to poor performance on new, unseen data.
+
+Q: How does regularization help with overfitting?
+A: Regularization reduces a model's complexity to prevent overfitting. L1 regularization encourages sparse weights, while L2 regularization shrinks weights without forcing them to zero.
+
+Q: What is the bias-variance tradeoff?
+A: The bias-variance tradeoff is a fundamental concept in machine learning that involves balancing two types of errors: bias (systematic error) and variance (sensitivity to data fluctuations), to create a model that generalizes well to new data.
+
+Q: What is the purpose of cross-validation?
+A: Cross-validation is a technique used to estimate how well a model will generalize to an independent dataset.
+
+Q: How does gradient descent work?
+A: Gradient descent is an optimization algorithm used to find the minimum of a function. It works by iteratively moving in the direction of the negative gradient of the function.
+
+Q: What are Support Vector Machines (SVMs)?
+A: Support Vector Machines are supervised learning models that work by finding the hyperplane that best separates data points of different classes in a high-dimensional space.
+
+Q: What is the "kernel trick" in SVMs?
+A: The "kernel trick" allows SVMs to model non-linear relationships by mapping the data into a higher-dimensional space where a linear separator can be found.
+
+Q: What are decision trees?
+A: Decision trees are supervised learning models that create a tree-like structure of decisions and their possible consequences. They are known for their interpretability.
+
+Q: What are ensemble methods?
+A: Ensemble methods combine multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.
+
+Q: What is the difference between bagging and boosting?
+A: Bagging (e.g., Random Forests) trains multiple models on different subsets of the data and averages their predictions. Boosting (e.g., Gradient Boosting) trains a sequence of models, where each model corrects the errors of its predecessor.
+
+Q: What is clustering?
+A: Clustering is an unsupervised learning task that involves grouping a set of objects in such a way that objects in the same group (cluster) are more similar to each other than to those in other groups.
+
+Q: How does K-Means clustering work?
+A: K-Means clustering partitions data into 'k' clusters by iteratively assigning each data point to the cluster with the nearest mean (centroid).
+
+Q: What is dimensionality reduction?
+A: Dimensionality reduction is the process of reducing the number of random variables under consideration by obtaining a set of principal variables.
+
+Q: What is Principal Component Analysis (PCA)?
+A: Principal Component Analysis (PCA) is a dimensionality reduction technique that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.
+
+Q: What are some common evaluation metrics for classification tasks?
+A: Common evaluation metrics for classification tasks include accuracy, precision, recall, F1-score, and the ROC curve with AUC.
+
+Q: What are some common evaluation metrics for regression tasks?
+A: Common evaluation metrics for regression tasks include Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).

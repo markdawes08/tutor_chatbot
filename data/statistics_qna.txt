@@ -1,0 +1,35 @@
+Q: What is the difference between a parameter and a statistic?
+A: A parameter is a value that describes a characteristic of an entire population, while a statistic is a value that describes a characteristic of a sample.
+
+Q: What is hypothesis testing?
+A: Hypothesis testing is a statistical method used to determine if there is enough evidence in a sample of data to infer that a certain condition is true for the entire population.
+
+Q: What is a p-value?
+A: A p-value is a measure of the probability that an observed difference could have occurred just by random chance. A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis.
+
+Q: What are confidence intervals?
+A: A confidence interval is a range of values, derived from a statistical calculation, that is likely to contain the value of an unknown population parameter.
+
+Q: What is Maximum Likelihood Estimation (MLE)?
+A: Maximum Likelihood Estimation is a method of estimating the parameters of a statistical model by finding the parameter values that maximize the likelihood of making the observations given the parameters.
+
+Q: What is the difference between linear and logistic regression?
+A: Linear regression is used to model the relationship between a continuous dependent variable and one or more independent variables. Logistic regression is used to model the probability of a categorical dependent variable.
+
+Q: What is the difference between descriptive and inferential statistics?
+A: Descriptive statistics deals with the methods of organizing, summarizing, and presenting data, while inferential statistics deals with drawing conclusions about a population based on a sample.
+
+Q: What are Type I and Type II errors in hypothesis testing?
+A: A Type I error is the rejection of a true null hypothesis (a "false positive"), while a Type II error is the non-rejection of a false null hypothesis (a "false negative").
+
+Q: What are the assumptions of linear regression?
+A: The main assumptions of linear regression are linearity, independence of errors, homoscedasticity (constant variance of errors), and normality of errors.
+
+Q: What is the difference between Bayesian and frequentist statistics?
+A: The main difference lies in the interpretation of probability. Frequentists view probability as the long-run frequency of an event, while Bayesians view probability as a degree of belief. Bayesian inference uses prior beliefs, which are updated with data to form posterior beliefs.
+
+Q: What is the purpose of a control group in an experiment?
+A: A control group is a group in an experiment that does not receive the treatment and is used as a benchmark to measure the effect of the treatment on the other groups.
+
+Q: Why is randomization important in experimental design?
+A: Randomization is the process of assigning subjects to treatment and control groups at random, to minimize bias and ensure that the groups are comparable.

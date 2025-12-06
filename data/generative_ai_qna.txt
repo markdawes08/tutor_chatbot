@@ -1,0 +1,29 @@
+Q: What is a generative model?
+A: A generative model is a type of statistical model that is used to generate new data that is similar to a given training dataset. It learns the underlying distribution of the data.
+
+Q: How do Generative Adversarial Networks (GANs) work?
+A: GANs consist of two neural networks, a Generator and a Discriminator. The Generator creates fake data, and the Discriminator tries to distinguish it from real data. They are trained in a minimax game until the Generator produces realistic data.
+
+Q: What are diffusion models?
+A: Diffusion models are a class of generative models that work by adding noise to data in a "forward process" and then learning to reverse this process to generate new data from noise.
+
+Q: How do transformers work?
+A: Transformers are a neural network architecture based on the attention mechanism, which allows them to weigh the importance of different parts of the input sequence. This makes them highly effective for a wide range of tasks, especially in natural language processing.
+
+Q: What is the difference between a decoder-only and an encoder-decoder transformer?
+A: Decoder-only transformers are used for autoregressive generation, where the output is generated one token at a time. Encoder-decoder transformers are used for sequence-to-sequence tasks, where the input sequence is first encoded into a representation, and then the output sequence is generated from that representation.
+
+Q: What are embeddings in the context of generative AI?
+A: Embeddings are dense vector representations of text or other data. They capture the semantic meaning of the data, allowing models to work with it more effectively.
+
+Q: What is Retrieval-Augmented Generation (RAG)?
+A: RAG is an approach that combines a pre-trained language model with an external knowledge base. A retriever finds relevant documents from the knowledge base, and a generator uses these documents to create a more factual and up-to-date response.
+
+Q: What are the benefits of RAG?
+A: RAG can improve the factuality and timeliness of generated responses and can help to reduce the problem of "hallucination" in language models.
+
+Q: What is a vector index?
+A: A vector index is a data structure that is used to store and search embeddings for fast similarity search. This is a key component of the retriever in a RAG system.
+
+Q: How are generative models evaluated?
+A: Evaluating generative models is challenging. Common metrics for language models include perplexity. For image models, Inception Score (IS) and Frechet Inception Distance (FID) are used. Human evaluation is also very important.

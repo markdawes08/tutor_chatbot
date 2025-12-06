@@ -1,0 +1,42 @@
+GENERATIVE AI
+A generative model learns the distribution of data to sample new examples.
+Variational autoencoders learn a latent space by optimizing an evidence lower bound.
+GANs train a generator and discriminator in a minimax game.
+Diffusion models learn to reverse a noise-adding process.
+Transformers use attention to model long-range dependencies.
+Self-attention computes similarity between tokens to form context vectors.
+Decoder-only transformers generate text autoregressively.
+Encoder-decoder transformers excel at sequence-to-sequence tasks.
+Embeddings map text into dense vector representations.
+Cosine similarity measures angular closeness between vectors.
+Retrieval-augmented generation adds external knowledge to a language model.
+A vector index stores embeddings for fast similarity search.
+
+GENERATIVE ADVERSARIAL NETWORKS (GANS) IN DEPTH
+GANs consist of two neural networks, a Generator and a Discriminator, that are trained simultaneously.
+-   **Generator:** The generator's job is to create plausible data. It takes a random noise vector as input and outputs data of the desired type (e.g., an image).
+-   **Discriminator:** The discriminator's job is to distinguish between real data and the fake data created by the generator. It takes a data sample as input and outputs the probability that the sample is real.
+-   **The Minimax Game:** The generator and discriminator are trained in a zero-sum game. The generator tries to fool the discriminator, and the discriminator tries to correctly identify the fake data. This process continues until the generator is producing data that is indistinguishable from the real data.
+
+DIFFUSION MODELS EXPLAINED
+Diffusion models are a new class of generative models that have shown remarkable results in image and audio generation. They work by adding noise to the data in a "forward process" and then learning to reverse this process in a "reverse process".
+-   **Forward Process:** This process gradually adds Gaussian noise to the data over a series of steps.
+-   **Reverse Process:** This process involves a neural network that learns to denoise the data, starting from pure noise and gradually removing the noise until a clean data sample is produced.
+
+TRANSFORMERS FOR GENERATIVE AI
+Transformers have become the foundation for many state-of-the-art generative models, especially in the domain of natural language processing.
+-   **Attention Mechanism:** The key innovation of the transformer is the attention mechanism, which allows the model to weigh the importance of different parts of the input sequence when generating the output. This is in contrast to RNNs, which process the input sequentially.
+-   **Positional Encodings:** Since transformers do not have a built-in sense of sequence order like RNNs, they use positional encodings to inject information about the position of each token in the sequence.
+-   **Large Language Models (LLMs):** LLMs are transformer-based models that have been trained on massive amounts of text data. They are capable of a wide range of generative tasks, including text generation, summarization, and translation. Examples include GPT-3, BERT, and T5.
+
+RETRIEVAL-AUGMENTED GENERATION (RAG)
+RAG is an approach that combines a pre-trained language model with an external knowledge base.
+-   **Retriever:** The retriever's job is to find relevant documents from the knowledge base given a user's query.
+-   **Generator:** The generator is a language model that takes the query and the retrieved documents as input and generates a response.
+-   **Benefits of RAG:** RAG can lead to more factual and up-to-date responses compared to using a language model alone, as it can access information that was not available during its training. It can also help to reduce the problem of "hallucination" in language models.
+
+EVALUATING GENERATIVE MODELS
+Evaluating generative models is a challenging task, as there is often no single "correct" output.
+-   **Perplexity:** For language models, perplexity is a common metric. It is a measure of how well a probability model predicts a sample. A lower perplexity indicates that the model is better at predicting the sample.
+-   **Inception Score (IS) and Frechet Inception Distance (FID):** For image generation models, IS and FID are widely used metrics. They measure the quality and diversity of the generated images by comparing their features (as extracted by a pre-trained network like InceptionNet) to the features of real images.
+-   **Human Evaluation:** Ultimately, the best way to evaluate a generative model is often to have humans assess the quality of its output. This can be done through surveys, ratings, or other forms of user feedback.

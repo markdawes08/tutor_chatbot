@@ -1,0 +1,41 @@
+STATISTICS
+A parameter describes a population, while a statistic describes a sample.
+Hypothesis testing assesses evidence against a null hypothesis.
+A p-value measures how extreme data is under the null.
+Confidence intervals estimate a parameter with uncertainty.
+Maximum likelihood estimation finds parameters that maximize the probability of data.
+Linear regression models a linear relationship between inputs and a continuous output.
+Logistic regression models the log-odds of binary outcomes.
+Correlation measures linear association between two variables.
+A t-test compares means across samples.
+ANOVA compares means across multiple groups.
+A residual is the difference between observed and predicted values.
+Multicollinearity harms interpretability in linear models.
+
+DESCRIPTIVE VS. INFERENTIAL STATISTICS
+Statistics can be broadly divided into two main branches:
+-   **Descriptive Statistics:** This branch of statistics deals with the methods of collecting, organizing, and presenting data in a convenient and informative way. This includes measures of central tendency (like mean, median, and mode) and measures of dispersion (like variance and standard deviation).
+-   **Inferential Statistics:** This branch of statistics deals with drawing conclusions or inferences about a population based on data from a sample. This is where hypothesis testing and confidence intervals come into play.
+
+HYPOTHESIS TESTING IN DETAIL
+Hypothesis testing is a formal procedure for investigating our ideas about the world using statistics. It is most often used by scientists to test specific predictions, called hypotheses, that arise from theories.
+-   **Null Hypothesis (H0):** The null hypothesis is a statement that there is no effect or no difference. It is the hypothesis that the researcher is trying to disprove.
+-   **Alternative Hypothesis (H1 or Ha):** The alternative hypothesis is a statement that there is an effect or a difference. It is the hypothesis that the researcher is trying to prove.
+-   **Type I and Type II Errors:** In hypothesis testing, there are two types of errors we can make. A Type I error is when we reject the null hypothesis when it is actually true (a "false positive"). A Type II error is when we fail to reject the null hypothesis when it is actually false (a "false negative").
+-   **Significance Level (alpha):** The significance level, denoted by alpha (α), is the probability of making a Type I error. It is usually set to 0.05 (or 5%).
+
+REGRESSION ANALYSIS
+Regression analysis is a set of statistical processes for estimating the relationships between a dependent variable (often called the 'outcome variable') and one or more independent variables (often called 'predictors', 'covariates', or 'features').
+-   **Assumptions of Linear Regression:** For a linear regression model to be valid, several assumptions must be met, including linearity (the relationship between the independent and dependent variables is linear), independence (the errors are independent of each other), homoscedasticity (the variance of the errors is constant), and normality (the errors are normally distributed).
+-   **Interpreting Coefficients:** In linear regression, the coefficient of an independent variable represents the change in the dependent variable for a one-unit change in the independent variable, holding all other variables constant.
+
+BAYESIAN STATISTICS
+Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability is defined as a degree of belief in a proposition. This is in contrast to frequentist statistics, where probability is defined as the frequency of an event in a large number of trials.
+-   **Prior, Likelihood, and Posterior:** In Bayesian inference, we start with a "prior" belief about the distribution of a parameter. We then update this belief with the "likelihood" of the data, which results in a "posterior" belief about the parameter's distribution. This is done using Bayes' theorem.
+-   **Bayesian vs. Frequentist Inference:** The main difference between Bayesian and frequentist inference is how they treat parameters. Frequentists treat parameters as fixed, unknown constants, while Bayesians treat them as random variables with distributions.
+
+EXPERIMENTAL DESIGN
+Experimental design is the design of any task that aims to describe or explain the variation of information under conditions that are hypothesized to reflect the variation.
+-   **Control Groups:** A control group is a group in an experiment or study that does not receive treatment by the researchers and is then used as a benchmark to measure how the other tested subjects do.
+-   **Randomization:** Randomization is the process of assigning subjects to treatment and control groups at random, to minimize bias.
+-   **Blinding:** In a blinded experiment, information which may influence the participants is withheld until after the experiment is complete. In a double-blind experiment, both the participants and the experimenters are blinded.

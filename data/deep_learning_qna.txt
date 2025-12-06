@@ -1,0 +1,35 @@
+Q: What is a neural network?
+A: A neural network is a computational model inspired by the structure and function of biological neural networks. It is composed of layers of interconnected nodes (neurons), where each connection has a weight associated with it.
+
+Q: What are activation functions?
+A: Activation functions are a crucial component of neural networks that introduce non-linearity into the model, allowing it to learn more complex patterns. Examples include ReLU, Sigmoid, and Tanh.
+
+Q: What is backpropagation?
+A: Backpropagation is the algorithm used to train neural networks. It works by computing the gradient of the loss function with respect to the network's weights, and then updating the weights to minimize the loss.
+
+Q: What is the difference between a convolutional neural network (CNN) and a recurrent neural network (RNN)?
+A: CNNs are primarily used for processing spatial data, such as images, and use convolutional and pooling layers to extract features. RNNs are designed for sequential data, such as text or time series, and have connections that form a directed cycle, allowing them to maintain a memory of past inputs.
+
+Q: What are transformers?
+A: Transformers are a type of neural network architecture that have become state-of-the-art for many natural language processing (NLP) tasks. They are based on the concept of attention, which allows the model to weigh the importance of different parts of the input sequence.
+
+Q: What is the Adam optimization algorithm?
+A: Adam (Adaptive Moment Estimation) is an optimization algorithm that is commonly used to train deep learning models. It adapts the learning rate for each weight in the network, which can lead to faster convergence.
+
+Q: What is transfer learning?
+A: Transfer learning is a machine learning technique where a model that has been pre-trained on a large dataset is used as the starting point for a new task. This can be very effective as the pre-trained model has already learned a rich set of features.
+
+Q: What is fine-tuning in the context of transfer learning?
+A: Fine-tuning is the process of unfreezing some of the layers of a pre-trained model and training them on the new task. This allows the model to adapt its learned features to the specifics of the new task.
+
+Q: What are autoencoders?
+A: Autoencoders are a type of neural network that are used for unsupervised learning, typically for dimensionality reduction or feature learning. They work by learning to compress the input data into a lower-dimensional representation (encoding) and then reconstruct the original data from this encoding.
+
+Q: What is the difference between a standard autoencoder and a variational autoencoder (VAE)?
+A: A standard autoencoder learns a single encoding for each input, while a VAE learns a probability distribution for the encoding. This allows VAEs to generate new data that is similar to the training data.
+
+Q: What is early stopping?
+A: Early stopping is a regularization technique that involves stopping the training process when a monitored metric, such as validation loss, has stopped improving. This helps to prevent overfitting.
+
+Q: What is data augmentation?
+A: Data augmentation is a technique used to increase the size of a training dataset by creating modified copies of existing data. For example, in computer vision, images can be rotated, flipped, or cropped to create new training samples.

@@ -3,18 +3,29 @@ from retrieval_engine import USEEmbedder, build_index
 
 
 def main():
-    # Load knowledge base
+    # Load knowledge base from all .txt files in the 'data' directory
     script_dir = os.path.dirname(__file__)
-    kb_path = os.path.join(script_dir, "knowledge_base.txt")
+    data_dir = os.path.join(script_dir, 'data')
 
+    document_parts = []
     try:
-        with open(kb_path, "r", encoding="utf-8") as f:
-            document = f.read()
+        print("--- Loading Knowledge Base ---")
+        source_files = [f for f in os.listdir(data_dir) if f.endswith(".txt")]
+        if not source_files:
+            print(f"Error: No .txt files found in the '{data_dir}' directory.")
+            return
+
+        for filename in sorted(source_files): # Sorting ensures a consistent order
+            kb_path = os.path.join(data_dir, filename)
+            with open(kb_path, "r", encoding="utf-8") as f:
+                print(f"-> Loading content from: {filename}")
+                document_parts.append(f.read())
+        
+        document = "\n\n".join(document_parts) # Join with double newline for separation
+
     except FileNotFoundError:
-        print(f"Error: knowledge_base.txt not found at {kb_path}")
-        print(
-            "Please make sure the file exists and is in the same directory as demo.py."
-        )
+        print(f"Error: The 'data' directory was not found at '{data_dir}'")
+        print("Please create the 'data' directory and place your .txt knowledge files inside it.")
         return
 
     # Initialize embedder and build index

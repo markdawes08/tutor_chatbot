@@ -110,4 +110,3 @@ def build_index(text, embedder):
     sentences = split_sentences(text)
     embeddings = embedder.embed(sentences)
     return RetrievalIndex(sentences, embeddings)
-
